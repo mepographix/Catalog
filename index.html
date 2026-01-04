@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lay's Landing Page Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white font-sans">
+
+    <header class="bg-[#EE3124] text-white pt-6 pb-20 relative">
+        <nav class="container mx-auto flex justify-between items-center px-10 mb-16">
+            <div class="flex items-center gap-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Lays_logo.png" alt="Logo" class="w-12">
+                <span class="font-bold text-xl italic">Potato</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-wider">
+                <a href="#">Create Your Own</a>
+                <a href="#">Shop Chips</a>
+                <a href="#">Shop By Category</a>
+                <a href="#">Explore</a>
+            </div>
+            <div class="flex gap-4 items-center">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </nav>
+
+        <div class="container mx-auto flex flex-col md:flex-row items-center px-10">
+            <div class="md:w-1/2">
+                <h1 class="text-6xl font-extrabold mb-6 leading-tight">The Best <br> Snack For You</h1>
+                <p class="mb-8 opacity-90 max-w-md">Potato Chips are the most eaten and popular crispy snack items. Demand for potato chips.</p>
+                <button class="bg-[#F6DE0D] text-black px-8 py-3 rounded-full font-bold flex items-center gap-2 hover:bg-yellow-400 transition">
+                    Shop Now <span class="bg-black text-white rounded-full w-5 h-5 flex items-center justify-center text-[10px]">&rarr;</span>
+                </button>
+            </div>
+            <div class="md:w-1/2 flex justify-center relative mt-10 md:mt-0">
+                <img src="https://via.placeholder.com/150/fde047/000000?text=Chip" class="absolute -top-10 left-0 w-20 rotate-12">
+                <img src="https://via.placeholder.com/250x350/fde047/000000?text=Lays+Classic" alt="Lays Classic" class="w-64 z-10 -mr-10 rotate-[-5deg]">
+                <img src="https://via.placeholder.com/250x350/ee3124/ffffff?text=Lays+Wavy" alt="Lays Wavy" class="w-64 rotate-[5deg]">
+            </div>
+        </div>
+        
+        <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-white rounded-full p-2 shadow-lg">
+            <div class="bg-[#EE3124] rounded-full p-2">
+                <i class="fa-solid fa-arrow-down text-white"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="container mx-auto py-20 px-10">
+        <div class="flex justify-between items-end mb-10">
+            <h2 class="text-2xl font-bold text-[#EE3124]">Best sellers. <span class="text-gray-400 text-sm ml-2 font-normal cursor-pointer underline">Shop all</span></h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="text-center group">
+                <div class="bg-gray-100 rounded-3xl p-6 mb-4 hover:shadow-xl transition">
+                    <img src="https://via.placeholder.com/150x200?text=Cheddar" alt="Chips" class="mx-auto transform group-hover:scale-105 transition">
+                </div>
+                <div class="flex justify-center text-[#F6DE0D] text-xs mb-1">★★★★★</div>
+                <h3 class="font-bold">Cheddar & Sour Cream</h3>
+                <p class="text-gray-400 text-xs mb-2">Pack of 6</p>
+                <p class="font-bold text-[#EE3124]">$44.00</p>
+            </div>
+
+            <div class="text-center group">
+                <div class="bg-gray-100 rounded-3xl p-6 mb-4 hover:shadow-xl transition">
+                    <img src="https://via.placeholder.com/150x200?text=Salt+Vinegar" alt="Chips" class="mx-auto transform group-hover:scale-105 transition">
+                </div>
+                <div class="flex justify-center text-[#F6DE0D] text-xs mb-1">★★★★★</div>
+                <h3 class="font-bold">Salt and Vinegar Flavour</h3>
+                <p class="text-gray-400 text-xs mb-2">Pack of 6</p>
+                <p class="font-bold text-[#EE3124]">$53.00</p>
+            </div>
+
+            <div class="text-center group">
+                <div class="bg-gray-100 rounded-3xl p-6 mb-4 hover:shadow-xl transition">
+                    <img src="https://via.placeholder.com/150x200?text=Classic" alt="Chips" class="mx-auto transform group-hover:scale-105 transition">
+                </div>
+                <div class="flex justify-center text-[#F6DE0D] text-xs mb-1">★★★★★</div>
+                <h3 class="font-bold">Family Size Classic</h3>
+                <p class="text-gray-400 text-xs mb-2">Pack of 6</p>
+                <p class="font-bold text-[#EE3124]">$34.90</p>
+            </div>
+
+            <div class="bg-[#EE3124] rounded-[40px] rounded-tl-none p-8 text-white relative flex flex-col justify-end">
+                <img src="https://via.placeholder.com/120x150?text=Wavy" class="absolute -top-10 left-1/2 -translate-x-1/2">
+                <h3 class="font-bold text-lg mb-4">Create Your Own.</h3>
+                <p class="text-[10px] mb-4 opacity-80">Explore all our bold flavors and create a wild mix.</p>
+                <button class="bg-[#F6DE0D] text-black text-[10px] font-bold py-2 rounded-full w-full">Get Started &rarr;</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-10 mb-20">
+        <div class="flex flex-col md:flex-row items-center gap-0">
+            <div class="md:w-3/5 rounded-[60px] overflow-hidden">
+                <img src="https://via.placeholder.com/800x500?text=Many+Chips+Grid" class="w-full h-full object-cover">
+            </div>
+            <div class="md:w-2/5 bg-[#3E2723] text-white p-12 rounded-[60px] rounded-tl-none -ml-12 z-10">
+                <h2 class="text-3xl font-bold mb-6">Not just any chips.</h2>
+                <hr class="w-10 border-[#F6DE0D] mb-6">
+                <p class="text-sm opacity-80 leading-relaxed mb-8">
+                    Potato Chips are the most eaten and popular crispy snack items. Demand for potato chips is increasing day by day as more and more people love to eat potato chips.
+                </p>
+                <button class="bg-[#F6DE0D] text-black px-6 py-2 rounded-full text-sm font-bold flex items-center gap-2">
+                    Shop now <span class="bg-black text-white rounded-full w-4 h-4 flex items-center justify-center text-[8px]">&rarr;</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-10 mb-20">
+        <h2 class="text-2xl font-bold text-[#EE3124] mb-10">Taste the good stuff. <span class="text-gray-400 text-sm ml-2 font-normal cursor-pointer underline">Shop all</span></h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="relative group">
+                <img src="https://via.placeholder.com/400x500?text=Person+Eating+1" class="rounded-[40px] w-full h-[400px] object-cover">
+                <div class="absolute bottom-4 left-4 right-4 bg-[#3E2723]/90 p-6 rounded-[30px] rounded-tl-none text-white">
+                    <p class="font-bold mb-3">Snacking</p>
+                    <button class="bg-[#F6DE0D] text-black text-[10px] font-bold px-4 py-2 rounded-full">Shop now &rarr;</button>
+                </div>
+            </div>
+            <div class="relative group">
+                <img src="https://via.placeholder.com/400x500?text=Person+Eating+2" class="rounded-[40px] w-full h-[400px] object-cover">
+                <div class="absolute bottom-4 left-4 right-4 bg-[#EE3124]/90 p-6 rounded-[30px] rounded-tl-none text-white">
+                    <p class="font-bold mb-3">Snacking</p>
+                    <button class="bg-[#F6DE0D] text-black text-[10px] font-bold px-4 py-2 rounded-full">Shop now &rarr;</button>
+                </div>
+            </div>
+            <div class="relative group">
+                <img src="https://via.placeholder.com/400x500?text=Person+Eating+3" class="rounded-[40px] w-full h-[400px] object-cover">
+                <div class="absolute bottom-4 left-4 right-4 bg-[#D37E55]/90 p-6 rounded-[30px] rounded-tl-none text-white">
+                    <p class="font-bold mb-3">Snacking</p>
+                    <button class="bg-[#F6DE0D] text-black text-[10px] font-bold px-4 py-2 rounded-full">Shop now &rarr;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#3E2723] py-10">
+        <div class="container mx-auto px-10 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center gap-6 text-white mb-6 md:mb-0">
+                <img src="https://via.placeholder.com/80?text=Chips" class="w-20">
+                <h2 class="text-2xl font-bold">Sign up to receive exclusive <br> offers and discounts.</h2>
+            </div>
+            <div class="relative w-full md:w-1/3">
+                <input type="email" placeholder="Your e-mail address" class="w-full bg-white/10 border border-white/20 rounded-full py-3 px-6 text-white outline-none">
+                <button class="absolute right-2 top-2 bg-[#F6DE0D] w-8 h-8 rounded-full flex items-center justify-center text-black font-bold">&rarr;</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#EE3124] text-white py-16">
+        <div class="container mx-auto px-10">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-10">
+                <div class="col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Lays_logo.png" alt="Logo" class="w-10">
+                        <span class="font-bold text-xl">Lay's</span>
+                    </div>
+                    <p class="text-xs opacity-70 leading-loose max-w-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm">Company</h4>
+                    <ul class="text-xs space-y-2 opacity-70">
+                        <li>About</li>
+                        <li>Platform</li>
+                        <li>Works</li>
+                        <li>Career</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm">Help</h4>
+                    <ul class="text-xs space-y-2 opacity-70">
+                        <li>Customer Support</li>
+                        <li>Delivery Details</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm">Install App</h4>
+                    <div class="space-y-3">
+                        <div class="bg-black p-2 rounded flex items-center gap-2 w-32 cursor-pointer">
+                            <i class="fa-brands fa-apple text-xl"></i>
+                            <div class="text-[8px]">Download on <br> <span class="text-[10px] font-bold">App Store</span></div>
+                        </div>
+                        <div class="bg-black p-2 rounded flex items-center gap-2 w-32 cursor-pointer">
+                            <i class="fa-brands fa-google-play text-xl"></i>
+                            <div class="text-[8px]">GET IT ON <br> <span class="text-[10px] font-bold">Google Play</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 pt-8 border-t border-white/20 flex justify-between items-center text-[10px] opacity-60">
+                <p>&copy; Copyright 2023. All Rights Reserved by Lay's Ltd.</p>
+                <div class="flex gap-4 text-sm">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
